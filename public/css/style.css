@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:200,300,400,500,600,700,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #c9eff0ee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    margin: 50px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgb(0, 0, 0, 0.1);
+}
+
+.container .left_Side {
+    position: relative;
+    background: #313638;
+    padding: 70px;
+}
+
+.profileText {
+    width: 255px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(225, 225, 225, 0.2);
+}
+
+
+.profileText .imgBx {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    margin-bottom: 40px;
+    border-style: solid;
+    border-radius: 50%;
+    border-color: #ffffff;
+    overflow: hidden;
+}
+
+.imgBx {
+    background: #e5e6e8;
+}
+
+.profileText .imgBx img {
+    position: absolute;
+    left: -100px;
+    object-fit: cover;
+}
+
+.profileText h2 {
+    color: #fff;
+    font-size: calc(0.5 + 1.5vw);
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.profileText h2 span {
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.contactInfo {
+    padding-top: 40px;
+}
+
+.left_Title {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.contactInfo ul {
+    position: relative;
+}
+
+.contactInfo ul li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+}
+
+.contactInfo ul li .icon {
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #179498
+}
+
+.contactInfo ul li span {
+    color: #fff;
+    font-weight: 300;
+}
+
+.contactInfo.formation li {
+    margin-bottom: 15px;
+}
+
+.contactInfo.formation h5 {
+    color: #179498;
+    font-weight: 500;
+}
+
+.contactInfo.formation,
+h3,
+h4,
+h5 {
+    margin-bottom: 10px;
+}
+
+.contactInfo.formation h4:nth-child(2) {
+    color: #fff;
+    font-weight: 800;
+
+}
+
+.contactInfo.formation h4 {
+    color: #fff;
+    font-weight: 300;
+}
+
+.contactInfo.Language .percent {
+    position: relative;
+    /* width: 100%; */
+    height: 6px;
+    background: #081921;
+    display: block;
+    margin-top: 5px;
+}
+
+.contactInfo.Language .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #179498;
+}
+
+.contactInfo.softSkills li {
+    color: #fff;
+    font-weight: 300;
+}
+
+.container .right_Side {
+    width: 910px;
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+
+.right_Title {
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.about {
+    margin-bottom: 50px;
+}
+
+p {
+    color: #333;
+}
+
+header,
+.right_Side section:not(:last-of-type) {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(128, 128, 128, 100%);
+}
+
+.about .box {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.about .box .year_company {
+    min-width: 150px;
+}
+
+.about .box .year_company h5 {
+    text-transform: uppercase;
+    color: #848c90;
+    font-weight: 600;
+}
+
+.about .box .text h4 {
+    text-transform: uppercase;
+    color: #179498;
+    font-size: 16px;
+}
+
+.about .box .text p {
+    text-transform: uppercase;
+    color: #081921;
+    font-weight: bold;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.about div ul {
+    list-style: none;
+}
+
+.about div li {
+    margin-bottom: 5px;
+}
+
+.about div li span:first-child {
+    font-weight: bold;
+}
+
+.about.skills h2 {
+    margin-bottom: 20px;
+}
+
+.about.skills ul {
+    display: flex;
+    list-style: none;
+}
+
+.about.skills li {
+    margin-right: 80px;
+    margin-left: 10px;
+}
+
+.about.skills li img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.about.interst ul {
+    list-style: none;
+}
+
+.interset ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.interset ul li {
+    list-style: none;
+    color: #333;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.interset ul li .fa {
+    color: #179498;
+    font-size: 18px;
+    width: 200px;
+}
+
+@media (max-width:1000px) {
+    .container {
+        margin: 10px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .profileText {
+        width: auto;
+    }
+
+    .interset ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .interset ul li .fa {
+        width: 40px;
+    }
+}
+
+@media (max-width:800px) {
+    .profileText {
+        width: auto;
+    }
+
+    .contactInfo.formation,
+    .contactInfo.Language .percent {
+        max-width: 600px;
+        min-width: 0;
+    }
+
+    .container .right_Side {
+        max-width: 720px;
+        min-width: 0;
+    }
+
+    .about .box {
+        flex-direction: column;
+    }
+
+    .about .box .year_company {
+
+        margin-bottom: 5px;
+    }
+
+}
+
+
+@media (max-width:600px) {
+    .profileText {
+        width: fit-content;
+    }
+
+    .contactInfo.formation,
+    .contactInfo.Language .percent {
+        max-width: 480px;
+        min-width: 0;
+    }
+
+    .container .right_Side {
+        max-width: 550px;
+        min-width: 0;
+    }
+
+    .about .box {
+        flex-direction: column;
+    }
+
+    .about .box .year_company {
+
+        margin-bottom: 5px;
+    }
+
+    .about.skills ul {
+        flex-direction: column;
+    }
+
+    .about.skills li {
+        margin-bottom: 15px;
+    }
+
+    .interset ul {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .interset ul li .fa {
+        width: 45px;
+    }
+}
