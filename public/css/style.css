@@ -326,7 +326,6 @@ header,
 
 }
 
-
 @media (max-width:600px) {
     .profileText {
         width: fit-content;
@@ -352,16 +351,10 @@ header,
         margin-bottom: 5px;
     }
 
-    .about.skills ul {
-        flex-direction: column;
-    }
-
     .about.skills li {
+        margin-left: 0;
+        margin-right: 20px;
         margin-bottom: 15px;
-    }
-
-    .interset ul {
-        grid-template-columns: repeat(1, 1fr);
     }
 
     .interset ul li .fa {
