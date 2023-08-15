@@ -7,7 +7,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body {
+ body {
     background-color: #c9eff0ee;
     display: flex;
     justify-content: center;
@@ -42,7 +42,6 @@ body {
     padding-bottom: 20px;
     border-bottom: 1px solid rgb(225, 225, 225, 0.2);
 }
-
 
 .profileText .imgBx {
     position: relative;
@@ -146,7 +145,6 @@ h5 {
 
 .contactInfo.Language .percent {
     position: relative;
-    /* width: 100%; */
     height: 6px;
     background: #081921;
     display: block;
@@ -167,7 +165,7 @@ h5 {
 }
 
 .container .right_Side {
-    width: 910px;
+    /* width: 910px; */
     position: relative;
     background: #fff;
     padding: 40px;
@@ -249,7 +247,7 @@ header,
 }
 
 .about.skills li {
-    margin-right: 80px;
+    margin-right: 10px;
     margin-left: 10px;
 }
 
@@ -277,7 +275,7 @@ header,
 .interset ul li .fa {
     color: #179498;
     font-size: 18px;
-    width: 200px;
+    width: 30px;
 }
 
 @media (max-width:1000px) {
@@ -290,13 +288,18 @@ header,
         width: auto;
     }
 
+    .about.skills li {
+        margin-right: 50px;
+        margin-left: 35px;
+      }
     .interset ul {
-        grid-template-columns: repeat(2, 1fr);
+        margin-left: 20px;
     }
 
     .interset ul li .fa {
         width: 40px;
     }
+
 }
 
 @media (max-width:800px) {
@@ -322,6 +325,16 @@ header,
     .about .box .year_company {
 
         margin-bottom: 5px;
+    }
+
+    .about.skills li {
+        margin-right: 20px;
+        margin-left: 25px;
+    }
+
+    .interset ul {
+        margin-left: 35px;
+        margin-right: 10px;
     }
 
 }
@@ -359,5 +372,11 @@ header,
 
     .interset ul li .fa {
         width: 45px;
+    }
+
+    .interset ul {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 50px;
+        margin-right: 45px;
     }
 }
