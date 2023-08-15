@@ -380,3 +380,22 @@ header,
         margin-right: 45px;
     }
 }
+
+    @media(max-width:500px) {
+        .container {
+            display: block;
+        }
+
+        .about.skills ul {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin-left: 20px;
+        }
+    
+        .interset ul {
+            margin-left: 10px;
+            margin-right: 0;
+        }
+} 
+
+  
