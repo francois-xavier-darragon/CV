@@ -55,12 +55,17 @@ body {
 }
 
 .imgBx {
-  background: #e5e6e8;
+  background: #dddddf;
+}
+
+.image {
+  width: 92%;
 }
 
 .profileText .imgBx img {
   position: absolute;
-  left: -100px;
+  left: 10px;
+  top: -5px;
   object-fit: cover;
 }
 
@@ -200,12 +205,12 @@ header,
   margin: 20px 0;
 }
 
-.last_year_company {
+/* .last_year_company {
   max-width: 150px;
   text-transform: uppercase;
   color: #848c90;
   font-weight: 600;
-}
+} */
 
 .about .box .year_company {
   min-width: 150px;
